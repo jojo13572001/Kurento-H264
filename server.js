@@ -222,6 +222,7 @@ function createMediaElements(pipeline, ws, callback) {
         // provides it instead of RAW format.
         //var options = {uri : 'rtsp://163.22.32.118/live1.sdp', useEncodedMedia: true}
         var path = "file:///"+__dirname + "/test.mkv"
+        //var path = "rtsp://211.75.8.115:554/stream1"
         var options = {uri : path, useEncodedMedia: true}
 
         pipeline.create('PlayerEndpoint', options, function(error, playerEndpoint) {
